@@ -9,6 +9,6 @@ app.get("/", function(req, res) {
   res.send(index);
 });
 
-app.listen(port, function() {
+app.listen(port, "127.0.0.1", function() {
   console.log("Listening on port: " + port);
 });
