@@ -5,5 +5,5 @@ Bingothon Website
 use this command to install the required packages:
 
 ```
-npm install --save express
+npm install --save express serve-favicon
 ```
