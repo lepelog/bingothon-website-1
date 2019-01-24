@@ -21,3 +21,11 @@ img{
     height: 160px;
 }
 
+#links{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1355px;
+    height: 200px;
+}
+
