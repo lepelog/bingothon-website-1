@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-image: url("pictures/background.png");
+            color: #fff;
         }
         ul#MO li {
             display:inline;
@@ -22,6 +23,22 @@
             flex: 1;
             width: 200px;
         }
+        .little-social {
+            width: 30px;
+            height: 30px;
+        }
+        .profilepic {
+            width: 60px;
+            height: 60px;
+        }
+        .shoutout-text {
+            vertical-align: text-top;
+            padding-left: 10px;
+        }
+        .shoutouts {
+            max-width: 1000px;
+            border-spacing: 10px;
+        }
     </style>
     <title>Staff | Bingothon</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -30,6 +47,18 @@
 <h1>Bingothon Staff</h1>
 <p>The team behind Bingothon is a group of volunteers who dedicate their free-time into it. Without these people Bingothon would not be how it is.</p>
 <br>
+<table class="shoutouts">
+    <tr>
+        <td><img src="pictures/Pikastroff.png" class="profilepic"></td>
+        <td><b>Pikastroff:</b><br><img class="little-social" src="pictures/twitch.png"><img class="little-social" src="pictures/twitter.png"></td>
+        <td class="shoutout-text">Big big shoutouts to them for everything and by that I really mean everything so that was hella cool and stuff and this and that and fun and more stuff and cool af smileyface Magoo</td>
+    </tr>
+    <tr>
+        <td><img src="pictures/floha258.png" class="profilepic"></td>
+        <td><b>Tr1cks:</b><br><img class="little-social" src="pictures/twitch.png"><img class="little-social" src="pictures/twitter.png"></td>
+        <td class="shoutout-text">More big shoutouts for tech and being drunk</td>
+    </tr>
+</table>
 <h2>Main Organizers</h2>
 <ul id="MO">
     <li><a href="https://twitch.tv/Pikastroff"><img src="pictures/Pikastroff.png">Pikastroff</a></li>
