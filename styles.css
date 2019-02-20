@@ -5,7 +5,8 @@ body{
   font-family: 'Fugaz One';
   font-style: normal;
   font-weight: 400;
-  src: local('Fugaz One'), local('FugazOne-Regular'), url(https://fonts.gstatic.com/s/fugazone/v8/rax_HiWKp9EAITukFsl8Axhf.woff2) format('woff2');
+  /* De-googlefy that font*/
+  src: local('Fugaz One'), local('FugazOne-Regular'), url(fonts/fugaz_one.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -17,7 +18,7 @@ body{
 
 body{
  /* background: #e6e6e6; */
-  background-image: url("/background.png");
+  background-image: url("background.png");
 }
 .tg {
   display: table-cell;
@@ -25,11 +26,7 @@ body{
   
   border-spacing: 10px;
 }
-tr:nth-child(2) .menu-item:nth-child(2){
-  opacity: 1;
-}
 .menu-item {
-  opacity: 0;
   font-family: 'Fugaz One';
   font-size: 20px;
   width: 200px;
@@ -39,12 +36,20 @@ tr:nth-child(2) .menu-item:nth-child(2){
   color: #d2303f;
   text-align: center;
   font-weight: bold;
+  letter-spacing: 0px;
+  transition: box-shadow 0.3s linear, letter-spacing 0.3s linear;
+}
+
+.menu-item.odd {
+  background-color: #d2303f;
+  color: #fff;
 }
 
 .menu-item:hover {
   box-shadow: 0 0 0 5px #c3c3c3;
-  transition: box-shadow 0.3s linear;
+  transition: box-shadow 0.3s linear, letter-spacing 0.3s linear;
   margin: 0.5em;
+  letter-spacing: 1px;
 }
 .menu-item a {
   width: 200px;
